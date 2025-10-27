@@ -1,4 +1,4 @@
-# 💬 RAG Chatbot Frontend
+# 💬 RAG Bot Frontend
 
 This is the **frontend interface** for the AI Chatbot with YouTube integration.  
 It provides a lightweight, interactive chat UI built using **React + TypeScript + Vite**, allowing users to have intelligent conversations with the AI agent hosted on the backend.
