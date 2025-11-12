@@ -96,7 +96,7 @@ function App() {
   return (
     <div className='chat-container'>
       <header className='chat-header'>
-        <h1>AI Chat</h1>
+        <h1>Chat with RAG Bot</h1>
         <button className='reset-button' onClick={resetChat}>
           <svg
             width='16'
@@ -128,7 +128,7 @@ function App() {
               }`}
             >
               <div className='message-avatar'>
-                {message.isUser ? 'You' : 'AI'}
+                {message.isUser ? 'You' : 'Rag Bot'}
               </div>
               <div className='message-content'>{message.text}</div>
             </div>
