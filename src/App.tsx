@@ -117,7 +117,7 @@ function App() {
       <div className='messages-container'>
         {messages.length === 0 ? (
           <div className='empty-state'>
-            <p>Start your conversation with the AI</p>
+            <p>Start your conversation with the RAG Bot</p>
           </div>
         ) : (
           messages.map((message) => (
@@ -128,7 +128,7 @@ function App() {
               }`}
             >
               <div className='message-avatar'>
-                {message.isUser ? 'You' : 'Rag Bot'}
+                {message.isUser ? 'You' : 'Bot'}
               </div>
               <div className='message-content'>{message.text}</div>
             </div>
