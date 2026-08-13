@@ -11,7 +11,7 @@ function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [threadId, setThreadId] = useState<number>(Date.now());
+  const [threadId, setThreadId] = useState<string>(String(Date.now()));
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -90,7 +90,7 @@ function App() {
 
   const resetChat = () => {
     setMessages([]);
-    setThreadId(Date.now());
+    setThreadId(String(Date.now()));
   };
 
   return (
